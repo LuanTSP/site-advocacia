@@ -9,7 +9,7 @@ function Hero() {
         ">
         <div className='flex flex-col w-1/2 text-white pt-24 gap-4'>
             <h1 className="
-                text-4xl
+                text-title1
                 font-bold
                 ">Soluções de Qualidade para Pessoas Físicas e Jurídicas
             </h1>
