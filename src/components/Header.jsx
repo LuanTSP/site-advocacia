@@ -11,9 +11,9 @@ function Header() {
           <img src={logo_nome} alt='Logo Nome Advocacia' className='scale-75'/>
         </div>
         <nav className='flex gap-8 text-yellow-400'>
-            <li className='list-none'><Link to="/">Especialidades</Link></li>
-            <li className='list-none'><Link to="/">Quem Somos</Link></li>
-            <li className='list-none'><Link to="/">Contato</Link></li>
+            <li className='list-none'><a href='#especialidades'>Especialidades</a></li>
+            <li className='list-none'><a href='#quemsomos' to="/">Quem Somos</a></li>
+            <li className='list-none'><a href="#contato" to="/">Contato</a></li>
         </nav>
     </header>
   )

@@ -12,7 +12,8 @@ module.exports = {
       backgroundImage: {
         'judges': "url('/src/imgs/judges.jpg')",
         'logo': "url('/src/imgs/logo.png')",
-        'logo_nome': "url('/src/imgs/logo_nome.png')"
+        'logo_nome': "url('/src/imgs/logo_nome.png')",
+        'woman': "url('/src/imgs/woman.png')",
       },
       colors: {
         'darkGray': "#101010",

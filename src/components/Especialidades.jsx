@@ -6,7 +6,7 @@ import { BsFillFileSpreadsheetFill } from 'react-icons/bs'
 
 function Especialidades() {
     return (
-    <section className="p-4 font-Roboto bg-black text-white min-h-screen">
+    <section id="especialidades" className="p-4 font-Roboto bg-black text-white min-h-screen">
         <h1 className='text-title1 mb-4'>Algumas de Nossas Especialidades</h1>
         <div className="flex justify-evenly">
             <EspecialidadesCard

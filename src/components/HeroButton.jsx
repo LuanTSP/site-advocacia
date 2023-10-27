@@ -1,9 +1,10 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function HeroButton(props) {
   return (
-    <button className="
-      py-4 text-yellow-400 border rounded-full border-yellow-400
+    <a href={props.id} className="
+      py-4 text-yellow-400 border rounded-full border-yellow-400 flex items-center justify-center
       uppercase tracking-wider font-bold text-1xl w-full relative z-[1]
 
       before:absolute
@@ -26,7 +27,7 @@ function HeroButton(props) {
       hover:text-white
     ">
       {props.text}
-    </button>
+    </a>
   )
 }
 
