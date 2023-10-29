@@ -2,7 +2,9 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 function QuemSomosCard(props) {
-  return (
+    const image = require(`../imgs/${props.imgName}`)
+
+    return (
     <Link to="/" className="
         duration-200
         ease
@@ -25,9 +27,7 @@ function QuemSomosCard(props) {
         before:z-[1]
     ">
         <div className="bg-white rounded shadow-md shadow-gray-400 flex items-center h-64">
-            <div className="
-                h-full w-80 bg-woman bg-center rounded bg-cover relative overflow-hidden
-                
+            <div className="h-full w-80 overflow-hidden relative
                 before:content-['']
                 before:absolute
                 before:top-0
@@ -40,6 +40,11 @@ function QuemSomosCard(props) {
                 before:-translate-x-[35%]
                 before:scale-y-[300]
             ">
+                <img src={image} alt='image' className="
+                    h-full w-full rounded bg-cover
+                    object-cover
+                ">
+                </img>
             </div>
             <div className="h-full w-full p-4">
                 <h2 className="font-bold text-title1">{props.nome}</h2>   
@@ -61,7 +66,7 @@ function QuemSomosCard(props) {
             </div>
         </div>
     </Link>
-  )
+)
 }
 
 export default QuemSomosCard
