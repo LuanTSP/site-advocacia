@@ -1,8 +1,18 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import AOS from 'aos'
 
 function EspecialidadesCard(props) {
+    useEffect(() => {
+        AOS.init({
+            duration:200,
+            delay:100,
+            offset:50,
+            easing:"ease-out"
+        })
+    })
+
   return (
-    <div className="flex flex-col w-72 h-96 border border-gray-950 rounded-lg 
+    <div data-aos="fade-zoom-in" className="flex flex-col w-72 h-96 border border-gray-950 rounded-lg 
         shadow-md shadow-gray-900
         duration-100
         ease

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import HeroButton from './HeroButton'
 
 function Hero() {
@@ -21,7 +21,6 @@ function Hero() {
                 <HeroButton text="CONHEÇA" id="#especialidades"/>
             </div>
         </div>
-        
     </section>
   )
 }

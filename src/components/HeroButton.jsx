@@ -19,7 +19,7 @@ function HeroButton(props) {
       before:opacity-0
       before:z-[-1]
       before:origin-left
-      before:duration-100
+      before:duration-150
       before:ease-out
       
       hover:before:scale-x-100

@@ -1,32 +1,31 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
+import AOS from 'aos'
 
 function QuemSomosCard(props) {
     const image = require(`../imgs/${props.imgName}`)
 
-    return (
-    <Link to="/" className="
-        duration-200
-        ease
-        hover:before:scale-x-100
-        shadow-black
-        relative
+    useEffect(() => {
+        AOS.init({
+            duration:250,
+            delay:100,
+            easing:'ease-in',
+            offset:100,
+        })
+    }, [])
 
-        before:scale-x-0
-        before:origin-left
-        before:duration-500
-        before:ease
-        before:content-['']
-        before:bottom-0
-        before:left-0
-        before:right-0
-        before:top-0
-        before:bg-[rgba(0,0,0,0.2)]
-        before:rounded
-        before:absolute
-        before:z-[1]
+    return (
+    <Link to="/" data-aos="fade-zoom-in" className="
+        shadow-black
     ">
-        <div className="bg-white rounded shadow-md shadow-gray-400 flex items-center h-64">
+        <div className="bg-white rounded shadow-md shadow-gray-400 flex items-center h-64
+            ease
+            duration-200
+            hover:bg-gray-100
+            hover:ease-in-out
+            hover:delay-100
+            hover:scale-[1.01]
+        ">
             <div className="h-full w-80 overflow-hidden relative
                 before:content-['']
                 before:absolute
