@@ -1,21 +1,11 @@
 import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
-import AOS from 'aos'
 
 function QuemSomosCard(props) {
     const image = require(`../imgs/${props.imgName}`)
 
-    useEffect(() => {
-        AOS.init({
-            duration:250,
-            delay:100,
-            easing:'ease-in',
-            offset:100,
-        })
-    }, [])
-
     return (
-    <Link to="/" data-aos="fade-zoom-in" className="
+    <Link to="/" className="
         shadow-black
     ">
         <div className="bg-white rounded shadow-md shadow-gray-400 flex items-center h-64
@@ -26,7 +16,8 @@ function QuemSomosCard(props) {
             hover:delay-100
             hover:scale-[1.01]
         ">
-            <div className="h-full w-80 overflow-hidden relative
+            <div className="h-full w-72 overflow-hidden relative
+                md:w-80
                 before:content-['']
                 before:absolute
                 before:top-0
@@ -46,13 +37,15 @@ function QuemSomosCard(props) {
                 </img>
             </div>
             <div className="h-full w-full p-4">
-                <h2 className="font-bold text-title1">{props.nome}</h2>   
+                <h2 className="font-bold text-[1.3rem] md:text-title1">{props.nome}</h2>   
                 <ul>
-                    <h2 className='font-bold text-[1.15rem]'>
+                    <h2 className='font-bold text-[0.9rem] md:text-[1.1rem]'>
                         {props.speciality}
                     </h2>
                     {props.areas ?  props.areas.map((spec) => (
                         <li className="
+                            text-[0.9rem]
+                            md:text-[1rem]
                             before:content-['●']
                             before:mr-4
                             before:text-[0.6rem]

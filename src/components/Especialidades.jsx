@@ -6,9 +6,11 @@ import { BsFillFileSpreadsheetFill } from 'react-icons/bs'
 
 function Especialidades() {
     return (
-    <section id="especialidades" className="p-4 font-Roboto bg-black text-white min-h-screen">
+    <section id="especialidades" className="pt-4 px-4 pb-8 font-Roboto bg-black text-white min-h-screen">
         <h1 className='text-title1 mb-4'>Algumas de Nossas Especialidades</h1>
-        <div className="flex justify-evenly">
+        <div className="flex justify-center flex-wrap gap-8
+            lg:justify-evenly
+        ">
             <EspecialidadesCard
                 title="Direito Criminal"
                 icon={<GiHandcuffs className='w-28 h-28'/>}

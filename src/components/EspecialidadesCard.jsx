@@ -12,7 +12,7 @@ function EspecialidadesCard(props) {
     })
 
   return (
-    <div data-aos="fade-zoom-in" className="flex flex-col w-72 h-96 border border-gray-950 rounded-lg 
+    <div data-aos="fade-zoom-in" className="flex flex-col w-72 min-h-96 border border-gray-950 rounded-lg 
         shadow-md shadow-gray-900
         duration-100
         ease

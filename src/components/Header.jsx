@@ -5,12 +5,12 @@ import logo_nome from '../imgs/logo_nome.png'
 function Header() {
   return (
     <header className='flex justify-between items-center bg-black h-24 text-white px-4'>
-        <div className='flex'>
+        <div className='flex items-center'>
           <img src={logo} alt='Logo Advocacia' className='scale-80 w-15'/>
-          <img src={logo_nome} alt='Logo Nome Advocacia' className='scale-75'/>
+          <img src={logo_nome} alt='Logo Nome Advocacia' className='scale-75 w-full h-full invisible md:visible'/>
         </div>
-        <nav className='flex gap-8 text-yellow-400'>
-            <li className="list-none relative
+        <nav className='flex items-center justify-end text-yellow-400 w-2/5 invisible md:visible'>
+            <li className="list-none relative mr-8
               before:content-['']
               before:top-[1.4rem]
               before:bottom-[0]
@@ -29,7 +29,7 @@ function Header() {
               </a>
             </li>
             <li className="
-              list-none relative
+              list-none relative mr-8
               before:content-['']
               before:top-[1.4rem]
               before:bottom-[0]
@@ -44,11 +44,11 @@ function Header() {
               hover:before:scale-100
             ">
               <a href='#quemsomos' to="/">
-                Quem Somos
+                Profissionais
               </a>
             </li>
             <li className="
-              list-none relative
+              list-none relative mr-8
               before:content-['']
               before:top-[1.4rem]
               before:bottom-[0]
