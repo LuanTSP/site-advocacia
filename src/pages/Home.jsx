@@ -6,7 +6,7 @@ import Contato from '../components/Contato'
 
 function Home() {
   return (
-    <main>
+    <main className='overflow-x-hidden'>
       <Hero/>
       <Especialidades/>
       <QuemSomos/>

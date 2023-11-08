@@ -4,13 +4,13 @@ import logo_nome from '../imgs/logo_nome.png'
 
 function Header() {
   return (
-    <header className='flex justify-between items-center bg-black h-24 text-white px-4'>
-        <div className='flex items-center'>
-          <img src={logo} alt='Logo Advocacia' className='scale-80 w-15'/>
-          <img src={logo_nome} alt='Logo Nome Advocacia' className='scale-75 w-full h-full invisible md:visible'/>
+    <header className='flex flex-col md:flex-row justify-between items-center bg-black min-h-24 text-white px-4'>
+        <div className='mx-8 flex items-center justify-center'>
+          <img src={logo} alt='Logo Advocacia' className='scale-75 w-15 hidden md:block object-cover'/>
+          <img src={logo_nome} alt='Logo Nome Advocacia' className='scale-75 md:-translate-x-8'/>
         </div>
-        <nav className='flex items-center justify-end text-yellow-400 w-2/5 invisible md:visible'>
-            <li className="list-none relative mr-8
+        <nav className='flex items-center justify-evenly md:pl-8 md:justify-end text-yellow-400 md:w-[400px] w-full pb-4 md:pb-0 tracking-wider'>
+            <li className="list-none relative md:mr-8
               before:content-['']
               before:top-[1.4rem]
               before:bottom-[0]
@@ -29,7 +29,7 @@ function Header() {
               </a>
             </li>
             <li className="
-              list-none relative mr-8
+              list-none relative md:mr-8
               before:content-['']
               before:top-[1.4rem]
               before:bottom-[0]
@@ -48,7 +48,7 @@ function Header() {
               </a>
             </li>
             <li className="
-              list-none relative mr-8
+              list-none relative md:mr-8
               before:content-['']
               before:top-[1.4rem]
               before:bottom-[0]
